@@ -46,6 +46,39 @@
         </div>
     </nav>
 
+    <div class="container my-4">
+        <h2>Kontakní formulář</h2>
+
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="zprava" class="form-label">Zpráva</label>
+                <textarea class="form-control" name="zprava" id="zprava" rows="5" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Odeslat</button>
+            </div>
+        </form>
+
+        <div>
+            <h2>Multiple Select</h2>
+
+            <select class="form-select">
+                <option>Vyberte...</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+        </div>
+
+    </div>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
