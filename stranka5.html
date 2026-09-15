@@ -7,6 +7,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progress</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,8 +27,8 @@
             <a class="navbar-brand" href="index.html">Domů</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -46,14 +58,14 @@
         </div>
     </nav>
 
-    <div class="container my-5">
-        <h1>Progress prokejtu</h1>
+    <div class="container my-4">
+        <h1>Progress projektu</h1>
 
         <div class="mb-4">
 
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 75%;">
-                    75 %
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;">
+                    100 %
                 </div>
             </div>
         </div>
@@ -62,7 +74,7 @@
             <div class="card-body">
                 <h5 class="card-title">2. 9. 2026 - První commit</h5>
                 <p class="card-text">
-                    Přídány potřebné NPM knihovny, index.html a navbar.
+                    Přidány potřebné NPM knihovny, index.html a navbar.
                 </p>
                 <span class="badge bg-success">25 %</span>
             </div>
@@ -82,7 +94,7 @@
             <div class="card-body">
                 <h5 class="card-title">9. 9. 2026 - Třetí commit</h5>
                 <p class="card-text">
-                    Přidán kontaktní formulář, multiple select pomocí knihovny Tom Select a WYSIWYG editor.
+                    Přidán kontaktní formulář a multiple select pomocí NPM knihovny Tom Select.
                 </p>
                 <span class="badge bg-success">75 %</span>
             </div>
@@ -90,25 +102,29 @@
 
         <div class="card mb-3">
             <div class="card-body">
-                <h5 class="card-title">Dokončení projektu</h5>
+                <h5 class="card-title">14. 9. 2026 - Čtvrtý commit</h5>
                 <p class="card-text">
-                    Zbývá dokončit WYSIWYG editor, dokumentaci, publikování projektu a poslední úpravy.
-                </p>
-                <span class="badge bg-secondary">25 % zbývá</span>
-            </div>
-        </div>
-
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">14. 9. 2026 – Čtvrtý commit</h5>
-                <p class="card-text">
-                    Přidal jsem progress bar s přehledem postupu projektu a dokončil úvodní stránku.
+                    Přidána úvodní stránka a progress bar.
                 </p>
                 <span class="badge bg-success">90 %</span>
             </div>
         </div>
 
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">15. 9. 2026 - Pátý commit</h5>
+                <p class="card-text">
+                    Přidána dokumentace projektu.
+                </p>
+                <span class="badge bg-success">100 %</span>
+            </div>
+        </div>
+
     </div>
+
+    <footer class="bg-light text-center py-3">
+        <a href="Dokumentace.pdf" target="_blank">Dokumentace projektu</a>
+    </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -8,6 +8,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulář</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,8 +28,8 @@
             <a class="navbar-brand" href="index.html">Domů</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -48,41 +60,42 @@
     </nav>
 
     <div class="container my-4">
-        <h2>Kontaktní formulář</h2>
+        <h1>Kontaktní formulář</h1>
 
         <form>
-            <!-- E-mail -->
             <div class="mb-3">
                 <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
 
-            <!-- Zpráva -->
             <div class="mb-3">
                 <label for="zprava" class="form-label">Zpráva</label>
                 <textarea class="form-control" name="zprava" id="zprava" rows="5" required></textarea>
             </div>
 
-            <!-- Multiple select -->
             <div class="mb-3">
                 <label for="technologie" class="form-label">Použité
-                        technologie</label>
+                    technologie</label>
 
                 <select id="technologie" name="technologie[]" multiple required>
-                        <option value="" disabled selected>vyberte...</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="bootstrap">Bootstrap</option>
-                        <option value="javascript">JavaScript</option>
-                    </select>
+                    <option value="" disabled selected>vyberte...</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="bootstrap">Bootstrap</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
             </div>
 
             <button type="submit" class="btn btn-primary">
-                    Odeslat
-                </button>
+                Odeslat
+            </button>
         </form>
 
     </div>
+
+    <footer class="bg-light text-center py-3">
+        <a href="Dokumentace.pdf" target="_blank">Dokumentace projektu</a>
+    </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
